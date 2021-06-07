@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a279c0db-e417-4c49-875c-7a384b65fa45" name="Default Changelist" comment="First commit">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/SignInPageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/EmptyShoppingCart.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/ForgottenPassword.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/UserAuthentication.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Properties/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/runner/Cukes1Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/runner/Cukes1Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ui/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ui/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/pages/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ui/pages/SignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/BaseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/BaseSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/HomePageSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/Example.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/UserAuthenticationExample.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Cukes1Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Cukes1Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ui/pages/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ui/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/pages/SignInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ui/pages/SignInPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/stepdefinitions/BaseSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ui/stepdefinitions/BaseSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/stepdefinitions/HomePageSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/stepdefinitions/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ui/stepdefinitions/Hooks.class" afterDir="false" />
+    </list>
+    <list id="abfb5633-79c6-41d3-8b91-0e322b481183" name="Revert &quot;second commit&quot;" comment="Revert &quot;second commit&quot;&#10;&#10;This reverts commit d11be738" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <branch-grouping />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1rvgkY1r9DpCHzYuM2RHLDbTLQX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/Features" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SOFTWARE TESTING\IdeaProjects\Framework\src\test\resources\Features" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SOFTWARE TESTING\IdeaProjects\Framework\src\test\resources\Properties" />
+      <recent name="D:\SOFTWARE TESTING\IdeaProjects\Framework\src\test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.Cukes1Runner">
+    <configuration name="Cukes1Runner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Framework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Cukes1Runner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCourgetteRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.runner" />
+      <option name="MAIN_CLASS_NAME" value="com.runner.TestCourgetteRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.Cukes1Runner" />
+        <item itemvalue="TestNG.TestCourgetteRunner" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a279c0db-e417-4c49-875c-7a384b65fa45" name="Default Changelist" comment="" />
+      <created>1619862124468</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619862124468</updated>
+    </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <created>1620414592373</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620414592373</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="7322e658-0b2b-46d9-8aca-cae9f6b30028">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/SOFTWARE TESTING/IdeaProjects/Framework/src/test/resources/Features" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Framework$Cukes1Runner.ic" NAME="Cukes1Runner Coverage Results" MODIFIED="1620347582457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

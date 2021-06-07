@@ -1,0 +1,132 @@
+14:01:56,910  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:11 - Going to Sign in page
+14:01:56,913  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:11 - Going to Sign in page
+14:01:58,198  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:53 - Clicking on 'Forgot your password' link
+14:01:58,244  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:31 - Entering user details
+14:01:58,705  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:41 - Clicking on Sign In Button
+14:01:59,078  INFO 1 com.ui.pages.ForgotPasswordPage<strong>{1}</strong>:23 - Entering email address
+14:01:59,210  INFO 1 com.ui.pages.ForgotPasswordPage<strong>{1}</strong>:29 - Clicking on Retrieve Password button
+14:01:59,212  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:61 - Going to assert =>There is no account registered for this email address
+14:01:59,597  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:41 - Clicking on Sign In Button
+14:02:00,462  INFO 1 com.ui.pages.ForgotPasswordPage<strong>{1}</strong>:29 - Clicking on Sign in button
+14:02:00,465  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:61 - Going to assert =>There is 1 error
+14:02:00,619  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:61 - Going to assert =>Authentication failed.
+14:02:06,252  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:11 - Going to Sign in page
+14:02:07,392  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:53 - Clicking on 'Forgot your password' link
+14:02:08,494  INFO 1 com.ui.pages.ForgotPasswordPage<strong>{1}</strong>:23 - Entering email address
+14:02:08,679  INFO 1 com.ui.pages.ForgotPasswordPage<strong>{1}</strong>:29 - Clicking on Retrieve Password button
+14:02:08,682  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:61 - Going to assert =>There is no account registered for this email address
+14:02:30,110  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:11 - Going to Sign in page
+14:02:31,105  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:53 - Clicking on 'Forgot your password' link
+14:02:33,140  INFO 1 com.ui.pages.ForgotPasswordPage<strong>{1}</strong>:23 - Entering email address
+14:02:33,278  INFO 1 com.ui.pages.ForgotPasswordPage<strong>{1}</strong>:29 - Clicking on Retrieve Password button
+14:02:33,281  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:61 - Going to assert =>There is no account registered for this email address
+14:02:41,915  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:11 - Going to Sign in page
+14:02:44,720  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:53 - Clicking on 'Forgot your password' link
+14:02:45,826  INFO 1 com.ui.pages.ForgotPasswordPage<strong>{1}</strong>:23 - Entering email address
+14:02:46,031  INFO 1 com.ui.pages.ForgotPasswordPage<strong>{1}</strong>:29 - Clicking on Retrieve Password button
+14:02:46,036  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:61 - Going to assert =>There is no account registered for this email address
+19:11:08,141  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:15 - Going to Sign in page
+19:11:09,504  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:21 - Entering user details 'gus@gmail.com' and '1q2w3e4r5t'
+19:11:09,884  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:38 - Clicking on button => 'Submit Login'
+19:14:42,777  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:15 - Going to Sign in page
+19:14:44,328  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:21 - Entering user details 'gus@gmail.com' and '1q2w3e4r5t'
+19:14:44,687  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:38 - Clicking on button => 'SubmitLogin'
+19:14:44,784  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:48 - Going to assert => 'There is 1 error'
+19:21:05,588  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:15 - Going to Sign in page
+19:21:06,568  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:21 - Entering user details 'gus@gmail.com' and '1q2w3e4r5t'
+19:21:06,923  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:38 - Clicking on button => 'SubmitLogin'
+19:21:08,790  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:50 - Going to assert => 'There is 1 error'
+19:21:08,919  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:50 - Going to assert => 'Authentication failed.'
+14:22:58,296  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:15 - Going to Sign in page
+14:22:59,517  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:44 - Clicking on link => 'Forgot your password?'
+14:23:01,141  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:21 - Entering user details 'gus@gmail.com' and 'null'
+16:21:22,691  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:15 - Going to Sign in page
+16:21:25,454  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:44 - Clicking on link => 'Forgot your password?'
+16:21:26,403  INFO 1 com.ui.pages.ForgotPasswordPage<strong>{1}</strong>:18 - Entering user details 'gus@gmail.com'
+16:21:26,555  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:38 - Clicking on button => 'Retrieve Password'
+16:38:17,107  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:15 - Going to Sign in page
+16:38:18,502  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:44 - Clicking on link => 'Forgot your password?'
+16:38:19,866  INFO 1 com.ui.pages.ForgotPasswordPage<strong>{1}</strong>:18 - Entering user details 'gus@gmail.com'
+16:38:20,021  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:38 - Clicking on button => 'Retrieve Password'
+16:38:21,291  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:50 - Going to assert => 'There is 1 error'
+16:38:21,418  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:50 - Going to assert => 'There is no account registered for this email address'
+16:50:05,606  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:15 - Going to Sign in page
+16:50:06,493  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:44 - Clicking on link => 'Forgot your password?'
+16:50:07,855  INFO 1 com.ui.pages.ForgotPasswordPage<strong>{1}</strong>:18 - Entering user details 'gus@gmail.com'
+16:56:01,228  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:15 - Going to Sign in page
+16:56:02,481  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:44 - Clicking on link => 'Forgot your password?'
+16:56:03,300  INFO 1 com.ui.pages.ForgotPasswordPage<strong>{1}</strong>:18 - Entering user details 'gus@gmail.com'
+17:18:17,656  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:15 - Going to Sign in page
+17:18:19,238  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:33 - Clicking on link => 'Forgot your password?'
+17:18:20,494  INFO 1 com.ui.pages.ForgotPasswordPage<strong>{1}</strong>:18 - Entering user details 'gus@gmail.com'
+17:18:20,650  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:33 - Clicking on Button => 'Retrieve Password'
+17:18:22,548  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:51 - Going to assert => 'There is 1 error'
+17:18:22,687  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:51 - Going to assert => 'There is no account registered for this email address'
+17:19:15,881  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:15 - Going to Sign in page
+17:19:16,767  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:21 - Entering user details 'gus@gmail.com' and '1q2w3e4r5t'
+17:19:17,141  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:33 - Clicking on button => 'SubmitLogin'
+17:19:18,432  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:51 - Going to assert => 'There is 1 error'
+17:19:18,562  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:51 - Going to assert => 'Authentication failed.'
+10:43:57,316  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:33 - Clicking on button => 'shopping cart'
+10:43:58,690  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:51 - Going to assert => 'Your shopping cart is empty'
+12:12:20,288  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:15 - Going to Women page
+12:12:22,084  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:33 - Clicking on link => 'Blouse'
+12:15:42,414  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:15 - Going to Women page
+12:15:43,966  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:33 - Clicking on link => 'Faded Short Sleeve T-shirts'
+12:49:43,622  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:15 - Going to Women page
+12:49:44,925  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:33 - Clicking on link => 'Faded Short Sleeve T-shirts'
+12:49:44,936  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+12:49:44,972  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:166 - Found =>3<= elements with by =>By.xpath: //*[contains(text(),'Faded Short Sleeve T-shirts')] | //*[@id='Faded Short Sleeve T-shirts'] | //*[contains(@title,'Faded Short Sleeve T-shirts')]<= Going to see which ones are visible
+12:49:45,076  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:353 - Applied default implicit wait. Implicit wait is set to 15 seconds.
+19:25:09,393  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:15 - Going to Sign in page
+19:25:11,327  INFO 1 com.ui.pages.SignInPage<strong>{1}</strong>:21 - Entering user details 'gus@gmail.com' and '1q2w3e4r5t'
+19:25:11,665  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:33 - Clicking on button => 'SubmitLogin'
+19:25:11,673  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+19:25:11,709  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:166 - Found =>1<= elements with by =>By.xpath: //*[contains(text(),'SubmitLogin')] | //*[@id='SubmitLogin'] | //*[contains(@title,'SubmitLogin')]<= Going to see which ones are visible
+19:25:11,735  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+19:25:11,750  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:353 - Applied default implicit wait. Implicit wait is set to 15 seconds.
+19:25:12,499  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:39 - Going to assert => 'There is 1 error'
+19:25:12,518  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+19:25:12,549  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:166 - Found =>1<= elements with by =>By.xpath: //*[contains(text(),'There is 1 error')]<= Going to see which ones are visible
+19:25:12,578  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+19:25:12,594  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:353 - Applied default implicit wait. Implicit wait is set to 15 seconds.
+19:25:12,637  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:39 - Going to assert => 'Authentication failed.'
+19:25:12,641  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+19:25:12,669  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:166 - Found =>1<= elements with by =>By.xpath: //*[contains(text(),'Authentication failed.')]<= Going to see which ones are visible
+19:25:12,703  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+19:25:12,719  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:353 - Applied default implicit wait. Implicit wait is set to 15 seconds.
+19:26:53,581  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:15 - Going to Sign in page
+19:26:54,643  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:33 - Clicking on link => 'Forgot your password?'
+19:26:54,661  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+19:26:54,696  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:166 - Found =>1<= elements with by =>By.xpath: //*[contains(text(),'Forgot your password?')] | //*[@id='Forgot your password?'] | //*[contains(@title,'Forgot your password?')]<= Going to see which ones are visible
+19:26:54,755  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+19:26:54,771  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:353 - Applied default implicit wait. Implicit wait is set to 15 seconds.
+19:26:56,393  INFO 1 com.ui.pages.ForgotPasswordPage<strong>{1}</strong>:18 - Entering user details 'gus@gmail.com'
+19:26:56,562  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:33 - Clicking on Button => 'Retrieve Password'
+19:26:56,569  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+19:26:56,599  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:166 - Found =>1<= elements with by =>By.xpath: //*[contains(text(),'Retrieve Password')] | //*[@id='Retrieve Password'] | //*[contains(@title,'Retrieve Password')]<= Going to see which ones are visible
+19:26:56,646  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+19:26:56,662  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:353 - Applied default implicit wait. Implicit wait is set to 15 seconds.
+19:26:57,568  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:39 - Going to assert => 'There is 1 error'
+19:26:57,584  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+19:26:57,612  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:166 - Found =>1<= elements with by =>By.xpath: //*[contains(text(),'There is 1 error')]<= Going to see which ones are visible
+19:26:57,645  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+19:26:57,662  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:353 - Applied default implicit wait. Implicit wait is set to 15 seconds.
+19:26:57,705  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:39 - Going to assert => 'There is no account registered for this email address'
+19:26:57,723  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+19:26:57,751  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:166 - Found =>1<= elements with by =>By.xpath: //*[contains(text(),'There is no account registered for this email address')]<= Going to see which ones are visible
+19:26:57,787  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+19:26:57,802  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:353 - Applied default implicit wait. Implicit wait is set to 15 seconds.
+19:27:42,641  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:33 - Clicking on button => 'shopping cart'
+19:27:42,659  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+19:27:42,696  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:166 - Found =>1<= elements with by =>By.xpath: //*[contains(text(),'shopping cart')] | //*[@id='shopping cart'] | //*[contains(@title,'shopping cart')]<= Going to see which ones are visible
+19:27:42,769  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+19:27:42,784  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:353 - Applied default implicit wait. Implicit wait is set to 15 seconds.
+19:27:43,688  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:39 - Going to assert => 'Your shopping cart is empty'
+19:27:43,705  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+19:27:43,735  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:166 - Found =>1<= elements with by =>By.xpath: //*[contains(text(),'Your shopping cart is empty')]<= Going to see which ones are visible
+19:27:43,784  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0
+19:27:43,798  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:353 - Applied default implicit wait. Implicit wait is set to 15 seconds.
+15:30:02,875  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:15 - Going to Women page
+15:30:07,288  INFO 1 com.ui.pages.GenericPage<strong>{1}</strong>:33 - Clicking on link => 'Faded Short Sleeve T-shirts'
+15:30:07,303  INFO 1 com.ui.pages.BasePage<strong>{1}</strong>:236 - Removed Implicit wait. Implicit wait is now set to 0

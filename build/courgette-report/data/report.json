@@ -1,0 +1,259 @@
+[ {
+  "line" : 5,
+  "elements" : [ {
+    "start_timestamp" : "2021-05-30T13:02:33.745Z",
+    "before" : [ {
+      "result" : {
+        "duration" : 6892793000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.ui.stepdefinitions.Hooks.openBrowser()"
+      }
+    } ],
+    "line" : 19,
+    "name" : "Recovering forgotten password",
+    "description" : "",
+    "id" : "user-authentication;recovering-forgotten-password",
+    "after" : [ {
+      "result" : {
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.ui.stepdefinitions.Hooks.closeBrowser()"
+      }
+    } ],
+    "type" : "scenario",
+    "keyword" : "Scenario",
+    "steps" : [ {
+      "result" : {
+        "duration" : 3975886300,
+        "status" : "passed"
+      },
+      "line" : 20,
+      "name" : "I go to \"Sign in\" page",
+      "match" : {
+        "arguments" : [ {
+          "val" : "Sign in",
+          "offset" : 9
+        } ],
+        "location" : "com.ui.stepdefinitions.GenericSteps.iGoToSomePage(java.lang.String)"
+      },
+      "keyword" : "Given "
+    }, {
+      "result" : {
+        "duration" : 1103315100,
+        "status" : "passed"
+      },
+      "line" : 21,
+      "name" : "I click on \"Forgot your password?\" link",
+      "match" : {
+        "arguments" : [ {
+          "val" : "Forgot your password?",
+          "offset" : 12
+        }, {
+          "val" : "link",
+          "offset" : 35
+        } ],
+        "location" : "com.ui.stepdefinitions.GenericSteps.iClickOnButtonOrLink(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "When "
+    }, {
+      "result" : {
+        "duration" : 205875300,
+        "status" : "passed"
+      },
+      "line" : 22,
+      "name" : "I enter \"gus@gmail.com\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "gus@gmail.com",
+          "offset" : 9
+        } ],
+        "location" : "com.ui.stepdefinitions.ForgotPasswordSteps.iEnterSomething(java.lang.String)"
+      },
+      "keyword" : "And "
+    }, {
+      "result" : {
+        "duration" : 3997000,
+        "status" : "passed"
+      },
+      "line" : 23,
+      "name" : "I click on \"Retrieve Password\" button",
+      "match" : {
+        "arguments" : [ {
+          "val" : "Retrieve Password",
+          "offset" : 12
+        }, {
+          "val" : "button",
+          "offset" : 31
+        } ],
+        "location" : "com.ui.stepdefinitions.GenericSteps.iClickOnButtonOrLink(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "And "
+    }, {
+      "result" : {
+        "error_message" : "java.lang.Exception: No elements became visible. Tried for 18seconds.\r\n\tat com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:224)\r\n\tat com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:204)\r\n\tat com.ui.pages.SignInPage.iSeeAnyTextOnThePage(SignInPage.java:62)\r\n\tat com.ui.stepdefinitions.GenericSteps.iSeeMessageSomething(GenericSteps.java:38)\r\n\tat ✽.I see message \"There is no account registered for this email address\"(file:///D:/SOFTWARE%20TESTING/IdeaProjects/Framework/src/test/resources/Features/UserAuthenticationExample.feature:24)\r\n",
+        "duration" : 21984989500,
+        "status" : "failed"
+      },
+      "line" : 24,
+      "name" : "I see message \"There is no account registered for this email address\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "There is no account registered for this email address",
+          "offset" : 15
+        } ],
+        "location" : "com.ui.stepdefinitions.GenericSteps.iSeeMessageSomething(java.lang.String)"
+      },
+      "keyword" : "Then "
+    } ],
+    "tags" : [ {
+      "name" : "@parallel"
+    }, {
+      "name" : "@Test2"
+    } ]
+  } ],
+  "name" : "User Authentication",
+  "description" : "",
+  "id" : "user-authentication",
+  "keyword" : "Feature",
+  "uri" : "file:src/test/resources/Features/UserAuthenticationExample.feature",
+  "tags" : [ {
+    "name" : "@parallel",
+    "type" : "Tag",
+    "location" : {
+      "line" : 4,
+      "column" : 1
+    }
+  } ]
+} , {
+  "line" : 2,
+  "elements" : [ {
+    "start_timestamp" : "2021-05-30T13:02:23.952Z",
+    "before" : [ {
+      "result" : {
+        "duration" : 5202077200,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.ui.stepdefinitions.Hooks.openBrowser()"
+      }
+    } ],
+    "line" : 4,
+    "name" : "Recovering forgotten password",
+    "description" : "",
+    "id" : "this-is-example-feature;recovering-forgotten-password",
+    "after" : [ {
+      "result" : {
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.ui.stepdefinitions.Hooks.closeBrowser()"
+      }
+    } ],
+    "type" : "scenario",
+    "keyword" : "Scenario",
+    "steps" : [ {
+      "result" : {
+        "duration" : 1840609900,
+        "status" : "passed"
+      },
+      "line" : 5,
+      "name" : "I go to \"Sign in\" page",
+      "match" : {
+        "arguments" : [ {
+          "val" : "Sign in",
+          "offset" : 9
+        } ],
+        "location" : "com.ui.stepdefinitions.GenericSteps.iGoToSomePage(java.lang.String)"
+      },
+      "keyword" : "Given "
+    }, {
+      "result" : {
+        "duration" : 2031852000,
+        "status" : "passed"
+      },
+      "line" : 6,
+      "name" : "I click on \"Forgot your password?\" link",
+      "match" : {
+        "arguments" : [ {
+          "val" : "Forgot your password?",
+          "offset" : 12
+        }, {
+          "val" : "link",
+          "offset" : 35
+        } ],
+        "location" : "com.ui.stepdefinitions.GenericSteps.iClickOnButtonOrLink(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "When "
+    }, {
+      "result" : {
+        "duration" : 140920200,
+        "status" : "passed"
+      },
+      "line" : 7,
+      "name" : "I enter \"gus@gmail.com\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "gus@gmail.com",
+          "offset" : 9
+        } ],
+        "location" : "com.ui.stepdefinitions.ForgotPasswordSteps.iEnterSomething(java.lang.String)"
+      },
+      "keyword" : "And "
+    }, {
+      "result" : {
+        "duration" : 1998300,
+        "status" : "passed"
+      },
+      "line" : 8,
+      "name" : "I click on \"Retrieve Password\" button",
+      "match" : {
+        "arguments" : [ {
+          "val" : "Retrieve Password",
+          "offset" : 12
+        }, {
+          "val" : "button",
+          "offset" : 31
+        } ],
+        "location" : "com.ui.stepdefinitions.GenericSteps.iClickOnButtonOrLink(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "And "
+    }, {
+      "result" : {
+        "error_message" : "java.lang.Exception: No elements became visible. Tried for 18seconds.\r\n\tat com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:224)\r\n\tat com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:204)\r\n\tat com.ui.pages.SignInPage.iSeeAnyTextOnThePage(SignInPage.java:62)\r\n\tat com.ui.stepdefinitions.GenericSteps.iSeeMessageSomething(GenericSteps.java:38)\r\n\tat ✽.I see message \"There is no account registered for this email address\"(file:///D:/SOFTWARE%20TESTING/IdeaProjects/Framework/src/test/resources/Features/Example.feature:9)\r\n",
+        "duration" : 22361833800,
+        "status" : "failed"
+      },
+      "line" : 9,
+      "name" : "I see message \"There is no account registered for this email address\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "There is no account registered for this email address",
+          "offset" : 15
+        } ],
+        "location" : "com.ui.stepdefinitions.GenericSteps.iSeeMessageSomething(java.lang.String)"
+      },
+      "keyword" : "Then "
+    } ],
+    "tags" : [ {
+      "name" : "@parallel"
+    }, {
+      "name" : "@logo"
+    } ]
+  } ],
+  "name" : "This is example feature",
+  "description" : "",
+  "id" : "this-is-example-feature",
+  "keyword" : "Feature",
+  "uri" : "file:src/test/resources/Features/Example.feature",
+  "tags" : [ {
+    "name" : "@parallel",
+    "type" : "Tag",
+    "location" : {
+      "line" : 1,
+      "column" : 1
+    }
+  } ]
+} ]

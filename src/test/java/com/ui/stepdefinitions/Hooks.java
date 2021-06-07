@@ -9,6 +9,7 @@ public class Hooks {
     public static WebDriver driver = null;
     static String url = "http://automationpractice.com/";
 
+
     @Before
     public void openBrowser(){
         System.setProperty("webdriver.chrome.driver", "D:\\Apps and Drivers\\Selenium Drivers\\Driver Chrome\\chromedriver.exe");
@@ -18,7 +19,7 @@ public class Hooks {
 
     @After
     public void closeBrowser(){
-    driver.close();
-    driver.quit();
+    //driver.close();
+    //driver.quit();
     }
 }

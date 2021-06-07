@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Courgette-JVM Report</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/gh/prashant-ramcharan/courgette-jvm/src/main/resources/report/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link href="https://cdn.jsdelivr.net/gh/prashant-ramcharan/courgette-jvm/src/main/resources/report/css/dataTables.bootstrap4.css"
+          rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://cdn.jsdelivr.net/gh/prashant-ramcharan/courgette-jvm/src/main/resources/report/css/core.min.css"
+          rel="stylesheet">
+
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <li class="navbar-brand" href="#">Courgette-JVM Report</li>
+</nav>
+
+<div class="content-wrapper">
+
+    <div class="container-fluid">
+        <!-- Result Cards -->
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 mb-3">
+                <div class="card text-white bg-primary o-hidden h-100">
+                    <div class="card-body">
+                        <div class="card-body-icon">
+                            <i class="fa fa-fw"></i>
+                        </div>
+                        <div class="mr-10">
+                            Total Features
+                        </div>
+                    </div>
+                    <div class="card-footer text-white clearfix small z-1" style="cursor: pointer;"
+                         onclick="setSearch('');">
+                        <span class="float-left text-white" id="card-total">2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-3">
+                <div class="card text-white bg-success o-hidden h-100">
+                    <div class="card-body">
+                        <div class="card-body-icon">
+                            <i class="fa fa-fw"></i>
+                        </div>
+                        <div class="mr-10">
+                            Passed Features
+                        </div>
+                    </div>
+                    <div class="card-footer text-white clearfix small z-1" style="cursor: pointer;"
+                         onclick="setSearch('Passed');">
+                        <span class="float-left text-white" id="card-passed">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-3">
+                <div class="card text-white bg-danger o-hidden h-100">
+                    <div class="card-body">
+                        <div class="card-body-icon">
+                            <i class="fa fa-fw"></i>
+                        </div>
+                        <div class="mr-10">
+                            Failed Features
+                        </div>
+                    </div>
+                    <div class="card-footer text-white clearfix small z-1" style="cursor: pointer;"
+                         onclick="setSearch('Failed');">
+                        <span class="float-left text-white" id="card-failed">2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-3">
+                <div class="card text-white bg-warning o-hidden h-100">
+                    <div class="card-body">
+                        <div class="card-body-icon">
+                            <i class="fa fa-fw"></i>
+                        </div>
+                        <div class="mr-10">
+                            Re-run Features
+                        </div>
+                    </div>
+                    <div class="card-footer text-white clearfix small z-1" style="cursor: pointer;"
+                         onclick="setSearch('Rerun');">
+                        <span class="float-left" id="card-rerun">2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <i class="fa"></i>Run Information
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                Timestamp:
+                            </div>
+                            <div>2021-05-30T13:03:08.840433200Z</div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-sm-3">
+                                Duration:
+                            </div>
+                            <div>1 min, 23 sec</div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-sm-3">
+                                Parallel Threads:
+                            </div>
+                            <div>2</div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-sm-3">
+                                Parallel Run Level:
+                            </div>
+                            <div>Feature</div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-sm-3">
+                                Rerun Failed:
+                            </div>
+                            <div>true</div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-sm-3">
+                                Cucumber Tags:
+                            </div>
+                            <div>@parallel</div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-sm-3">
+                                Cucumber Features:
+                            </div>
+                            <div>src/test/resources/Features</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="mt-3 mb-3">
+                        <canvas id="pieChart" width="100%" height="321"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Result Table -->
+        <div class="card mb-3">
+            <div class="card-header">
+                <i class="fa fa-table"></i>
+                Results
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" width="100%" id="dataTable" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th width="95%">Feature Name</th>
+                            <th>Result</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <a href="" data-toggle="collapse" data-target="#8f7709f2-0feb-4bce-a235-7b99d3802980">User
+                                    Authentication</a>
+                                <div class="collapse mt-2" id="8f7709f2-0feb-4bce-a235-7b99d3802980">
+                                    <hr>
+                                    <div class="row">
+                                        <a href="" data-toggle="modal"
+                                           data-target="#ea732b87-ba0a-473b-b54e-e6798f8a5750" id="child-row"
+                                           class="col-lg-9">Recovering forgotten password
+                                        </a>
+                                        <div class="col-lg-2">
+                                            <span class="float-right badge badge-danger">Failed after Rerun</span>
+                                        </div>
+                                    </div>
+                            </td>
+                            <td>
+                                <span class="float-left badge badge-danger">Failed</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="" data-toggle="collapse" data-target="#376d179b-21b9-48a8-888d-1e23585b7251">This
+                                    is example feature</a>
+                                <div class="collapse mt-2" id="376d179b-21b9-48a8-888d-1e23585b7251">
+                                    <hr>
+                                    <div class="row">
+                                        <a href="" data-toggle="modal"
+                                           data-target="#0a9d7e20-87f9-4f8f-a4c9-89d623adac1c" id="child-row"
+                                           class="col-lg-9">Recovering forgotten password
+                                        </a>
+                                        <div class="col-lg-2">
+                                            <span class="float-right badge badge-danger">Failed after Rerun</span>
+                                        </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="float-left badge badge-danger">Failed</span>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container-fluid -->
+
+    <!-- Modals -->
+    <div class="modal fade" id="ea732b87-ba0a-473b-b54e-e6798f8a5750" tabindex="-1" role="dialog"
+         aria-labelledby="ea732b87-ba0a-473b-b54e-e6798f8a5750" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-white bg-dark">
+<span class="modal-title"><h5>Recovering forgotten password</h5>
+<div class="font-italic text-muted">UserAuthenticationExample.feature - line 19</div></span>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-9" style="overflow-wrap:break-word;">
+                            com.ui.stepdefinitions.Hooks.openBrowser()
+                        </div>
+                        <div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">6892 ms</span>
+<span class="badge badge-success">Passed</span>
+</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-9" style="overflow-wrap:break-word;">
+                            Given I go to "Sign in" page
+                        </div>
+                        <div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">3975 ms</span>
+<span class="badge badge-success">Passed</span>
+</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-9" style="overflow-wrap:break-word;">
+                            When I click on "Forgot your password?" link
+                        </div>
+                        <div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">1103 ms</span>
+<span class="badge badge-success">Passed</span>
+</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-9" style="overflow-wrap:break-word;">
+                            And I enter "gus@gmail.com"
+                        </div>
+                        <div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">205 ms</span>
+<span class="badge badge-success">Passed</span>
+</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-9" style="overflow-wrap:break-word;">
+                            And I click on "Retrieve Password" button
+                        </div>
+                        <div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">3 ms</span>
+<span class="badge badge-success">Passed</span>
+</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-9" style="overflow-wrap:break-word;">
+                            Then I see message "There is no account registered for this email address"
+                        </div>
+                        <div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">21984 ms</span>
+<span class="badge badge-danger">Failed</span>
+</span>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-lg-12 text-danger" style="overflow-wrap:break-word;">
+                            java.lang.Exception: No elements became visible. Tried for 18seconds.
+                            at com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:224)
+                            at com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:204)
+                            at com.ui.pages.SignInPage.iSeeAnyTextOnThePage(SignInPage.java:62)
+                            at com.ui.stepdefinitions.GenericSteps.iSeeMessageSomething(GenericSteps.java:38)
+                            at ✽.I see message "There is no account registered for this email
+                            address"(file:///D:/SOFTWARE%20TESTING/IdeaProjects/Framework/src/test/resources/Features/UserAuthenticationExample.feature:24)
+
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-9" style="overflow-wrap:break-word;">
+                            com.ui.stepdefinitions.Hooks.closeBrowser()
+                        </div>
+                        <div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">0 ms</span>
+<span class="badge badge-success">Passed</span>
+</span>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="0a9d7e20-87f9-4f8f-a4c9-89d623adac1c" tabindex="-1" role="dialog"
+         aria-labelledby="0a9d7e20-87f9-4f8f-a4c9-89d623adac1c" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-white bg-dark">
+<span class="modal-title"><h5>Recovering forgotten password</h5>
+<div class="font-italic text-muted">Example.feature - line 4</div></span>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-9" style="overflow-wrap:break-word;">
+                            com.ui.stepdefinitions.Hooks.openBrowser()
+                        </div>
+                        <div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">5202 ms</span>
+<span class="badge badge-success">Passed</span>
+</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-9" style="overflow-wrap:break-word;">
+                            Given I go to "Sign in" page
+                        </div>
+                        <div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">1840 ms</span>
+<span class="badge badge-success">Passed</span>
+</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-9" style="overflow-wrap:break-word;">
+                            When I click on "Forgot your password?" link
+                        </div>
+                        <div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">2031 ms</span>
+<span class="badge badge-success">Passed</span>
+</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-9" style="overflow-wrap:break-word;">
+                            And I enter "gus@gmail.com"
+                        </div>
+                        <div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">140 ms</span>
+<span class="badge badge-success">Passed</span>
+</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-9" style="overflow-wrap:break-word;">
+                            And I click on "Retrieve Password" button
+                        </div>
+                        <div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">1 ms</span>
+<span class="badge badge-success">Passed</span>
+</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-9" style="overflow-wrap:break-word;">
+                            Then I see message "There is no account registered for this email address"
+                        </div>
+                        <div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">22361 ms</span>
+<span class="badge badge-danger">Failed</span>
+</span>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-lg-12 text-danger" style="overflow-wrap:break-word;">
+                            java.lang.Exception: No elements became visible. Tried for 18seconds.
+                            at com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:224)
+                            at com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:204)
+                            at com.ui.pages.SignInPage.iSeeAnyTextOnThePage(SignInPage.java:62)
+                            at com.ui.stepdefinitions.GenericSteps.iSeeMessageSomething(GenericSteps.java:38)
+                            at ✽.I see message "There is no account registered for this email
+                            address"(file:///D:/SOFTWARE%20TESTING/IdeaProjects/Framework/src/test/resources/Features/Example.feature:9)
+
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-9" style="overflow-wrap:break-word;">
+                            com.ui.stepdefinitions.Hooks.closeBrowser()
+                        </div>
+                        <div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">0 ms</span>
+<span class="badge badge-success">Passed</span>
+</span>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- /.content-wrapper -->
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://cdn.jsdelivr.net/gh/prashant-ramcharan/courgette-jvm/src/main/resources/report/js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/prashant-ramcharan/courgette-jvm/src/main/resources/report/js/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/prashant-ramcharan/courgette-jvm/src/main/resources/report/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdn.jsdelivr.net/gh/prashant-ramcharan/courgette-jvm/src/main/resources/report/js/jquery.easing.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/prashant-ramcharan/courgette-jvm/src/main/resources/report/js/jquery.dataTables.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/prashant-ramcharan/courgette-jvm/src/main/resources/report/js/dataTables.bootstrap4.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="https://cdn.jsdelivr.net/gh/prashant-ramcharan/courgette-jvm/src/main/resources/report/js/core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/prashant-ramcharan/courgette-jvm/src/main/resources/report/js/mdb.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/prashant-ramcharan/courgette-jvm/src/main/resources/report/js/Chart.min.js"></script>
+
+<script>
+    var passed = $('#card-passed').text();
+    var failed = $('#card-failed').text();
+    var rerun = $('#card-rerun').text();
+
+    var ctxP = document.getElementById("pieChart").getContext('2d');
+    var pieChart = new Chart(ctxP, {
+        type: 'pie',
+        data: {
+            labels: ["Passed", "Failed", "Re-run"],
+            datasets: [{
+                data: [passed, failed, rerun],
+                backgroundColor: ["#28a745", "#dc3545", "#ffbb33"]
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false
+        }
+    });
+
+</script>
+
+<script>
+    function setSearch(criteria) {
+        var search = "\"" + criteria + "\"";
+        if (criteria.length < 2) {
+            search = ''
+        }
+        $("input[type='search']").val(search).trigger($.Event("keyup", {keyCode: 13}));
+    }
+
+</script>
+
+</body>
+
+</html>
