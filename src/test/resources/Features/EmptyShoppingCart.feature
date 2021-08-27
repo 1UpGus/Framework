@@ -5,5 +5,5 @@ Feature: Empty Shopping Cart
   Scenario: Checking empty shopping cart
 
     Given I am on home page
-    When I click on "shopping cart" button
+    When I click on "Cart" button
     Then  I see message "Your shopping cart is empty"

@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
             cucumberOptions = @CucumberOptions(
                     features = {"src/test/resources/Features"},
                     glue = {"com.ui.stepdefinitions"},
-                    tags = {"@parallel"},
+                    tags = {"@removeItem"},
                     plugin = {
                             "json:build/cucumber-report/cucumber.json",
                             "html:build/cucumber-report/cucumber.html"},

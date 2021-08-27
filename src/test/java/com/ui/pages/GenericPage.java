@@ -4,7 +4,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
 import static com.google.common.truth.Truth.assertWithMessage;
 
 public class GenericPage extends BasePage {
@@ -28,11 +27,16 @@ public class GenericPage extends BasePage {
         }
     }
 
-//    ASK JOSEPH ABOUT THAT METHOD!
-    public static void clickOnSomething(String element1, String clickable) throws Exception {
-        log.info("Clicking on " + clickable + " => '" + element1 + "'");
-        WebElement element = waitForVisibleElement(By.xpath("//*[contains(text(),'" + element1 + "')] | //*[@id='" + element1 + "'] | //*[contains(@title,'" + element1 + "')]"));
-        element.click();
+    public static void enterTextOnField(String text, String elementTextBox) throws Exception {
+        log.info("Entering '" + text + "' on '" + elementTextBox + "' text field");
+        WebElement element = waitForVisibleElement(By.id(elementTextBox));
+        inputText(element, text);
+    }
+
+    public static void clickOnElementText(String elementText) throws Exception {
+        log.info("Clicking on Web Element => '" + elementText + "'");
+        WebElement element = waitForVisibleElement(By.xpath("//*[contains(text(), '" + elementText + "')]"));
+        waitAndClickWithRetry(element);
     }
 
     public static void iSeeAnyTextOnThePage(String message) throws Exception {
@@ -40,5 +44,6 @@ public class GenericPage extends BasePage {
         WebElement element = waitForVisibleElement(By.xpath("//*[contains(text(),'" + message + "')]"));
         assertWithMessage("Text => '" + message + "' <= is not visible").that(element.isDisplayed()).isTrue();
     }
+
 }
 

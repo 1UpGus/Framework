@@ -19,6 +19,7 @@ import org.apache.commons.lang3.StringUtils;
 
 
 public class BasePage {
+
     public static WebDriver driver;
     //Set timeOutDefault for WebDriverWait
     private static final int timeOutDefault = 30;
@@ -60,12 +61,32 @@ public class BasePage {
         je.executeScript("arguments[0].scrollIntoView();", Element);
     }
 
-
     public static void waitForElementToBeVisible(By element) {
         wait = new WebDriverWait(driver, 40);
         wait.ignoring(StaleElementReferenceException.class);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(element)));
         setWebDriverWait();
+    }
+
+    public static void waitForElementToBeVisibleAndClickable(WebElement Element) {
+        waitForElementToBeVisible(Element);
+        waitForElementToBeClickable(Element);
+    }
+
+    public static void inputText(WebElement element, String textToInput) throws Exception {
+        log.info("Sending text to element => " + element );
+        waitForElementToBeVisibleAndClickable(element);
+        if (textToInput.isEmpty()) {
+            log.info("Planned text to input was blank, using backspace to delete current content");
+            while (!element.getAttribute("value").isEmpty()) {
+                element.sendKeys(Keys.BACK_SPACE);
+            }
+        } else {
+            log.info("Clearing and inputting '" + textToInput + "' to input");
+            element.clear();
+            log.info("Entering text => '" + textToInput + "'");
+            element.sendKeys(textToInput);
+        }
     }
 
     public static void waitForElementToBeVisible(WebElement element, boolean ignoreStaleElement) {
@@ -163,12 +184,12 @@ public class BasePage {
         int count = 0;
         WebElement uniqueElement = null;
         List<WebElement> elements = driver.findElements(by);
-        log.info("Found =>" + elements.size() + "<= elements with by =>" + by + "<= Going to see which ones are visible");
+        log.info("Found => " + elements.size() + " <= elements with by => " + by + " <= Going to see which ones are visible");
         if (elements.size() == 1)
             try {
                 return elements.get(0).isDisplayed() ? elements.get(0) : null;
             } catch (StaleElementReferenceException e) {
-                log.info("Received Stale Element after finding 1 visible element with by =>" + by + "<= Sending back null");
+                log.info("Received Stale Element after finding 1 visible element with by => " + by + " <= Sending back null");
                 return null;
             }
 
@@ -342,7 +363,7 @@ public class BasePage {
 
     /**
      * Apply the default Implicit wait to the driver in seconds,
-     * this should only be called within the BaePage constructor or if a method hs overridden/removed the implicit wait
+     * this should only be called within the BasePage constructor or if a method is overridden/removed the implicit wait
      */
     public static void applyDefaultImplicitWait() {
         if (isImplicitWaitSet) {
@@ -373,7 +394,7 @@ public class BasePage {
             waitAndClick(element);
             try {
                 removeImplicitWait();
-                log.debug("Clicked on element =>" + element);
+                log.debug("Clicked on element => '" + element + "'");
                 applyDefaultImplicitWait();
             } catch (WebDriverException e) {
                 applyDefaultImplicitWait();
@@ -412,6 +433,36 @@ public class BasePage {
         }
         setWebDriverWait();
         waitForDriver();
+    }
+
+//    public static void waitForElementsToHaveText(By by, WebElement root) {
+//        log.info("Going to wait for every element in list of elements to have text");
+//        wait.ignoring(StaleElementReferenceException.class);
+//        wait.until(driver ->{
+//                List<WebElement> elements = root.findElements(by);
+//                for (WebElement element : elements) {
+//                    log.info("Going to check =>"+element+"<= has text=>"+element.getText());
+//                    if(element.getText().isEmpty()) return false;
+//                }
+//                log.info("all elements have text returning ....");
+//                return true;
+//            } );
+//    }
+
+
+    public static void waitForElementsToHaveText(By by, WebElement root) {
+        log.info("Going to wait for every element in list of elements to have text");
+        wait.ignoring(StaleElementReferenceException.class);
+        wait.until(new ExpectedCondition<Boolean>() {
+            public Boolean apply(WebDriver driver) {
+                List<WebElement> elements = root.findElements(by);
+                for (WebElement element : elements) {
+                    log.info("Going to check =>"+element+"<= has text=>"+element.getText());
+                    if(element.getText().isEmpty()) return false;
+                }
+                log.info("all elements have text returning ....");
+                return true;
+            } });
     }
 
 }

@@ -4,32 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a279c0db-e417-4c49-875c-7a384b65fa45" name="Default Changelist" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/SignInPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/EmptyShoppingCart.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/ForgottenPassword.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/UserAuthentication.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Properties/log4j2.xml" afterDir="false" />
+    <list default="true" id="a279c0db-e417-4c49-875c-7a384b65fa45" name="Default Changelist" comment="Commit after final configuration of the project.">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/Selenium.logs" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/Selenium.logs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/courgette-report/data/report.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/courgette-report/data/report.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/courgette-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/courgette-report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/courgette-rerun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/courgette-rerun.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/cucumber-report/cucumber.html/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/cucumber-report/cucumber.html/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/cucumber-report/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/cucumber-report/cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/runner/Cukes1Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/runner/Cukes1Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/runner/TestCourgetteRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/runner/TestCourgetteRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ui/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/pages/ForgotPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ui/pages/ForgotPasswordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/pages/GenericPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ui/pages/GenericPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ui/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/pages/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ui/pages/SignInPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/BaseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/BaseSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/HomePageSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/ForgotPasswordSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/ForgotPasswordSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/GenericSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/GenericSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/Example.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/UserAuthenticationExample.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/SignInPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/SignInPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/WomensColthingSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ui/stepdefinitions/WomensColthingSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/AddToCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/AddToCart.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/CreateAccount.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/CreateAccount.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/EmptyShoppingCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/EmptyShoppingCart.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/ForgottenPassword.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/ForgottenPassword.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/UserAuthentication.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/UserAuthentication.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Cukes1Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Cukes1Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/runner/TestCourgetteRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/runner/TestCourgetteRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/pages/BasePage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ui/pages/BasePage$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ui/pages/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/pages/ForgotPasswordPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ui/pages/ForgotPasswordPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/pages/GenericPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ui/pages/GenericPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ui/pages/HomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/pages/SignInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ui/pages/SignInPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/stepdefinitions/BaseSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ui/stepdefinitions/BaseSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/stepdefinitions/HomePageSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/stepdefinitions/ForgotPasswordSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ui/stepdefinitions/ForgotPasswordSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/stepdefinitions/GenericSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ui/stepdefinitions/GenericSteps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/stepdefinitions/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ui/stepdefinitions/Hooks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/stepdefinitions/SignInPageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ui/stepdefinitions/SignInPageSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ui/stepdefinitions/WomensColthingSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ui/stepdefinitions/WomensColthingSteps.class" afterDir="false" />
     </list>
     <list id="abfb5633-79c6-41d3-8b91-0e322b481183" name="Revert &quot;second commit&quot;" comment="Revert &quot;second commit&quot;&#10;&#10;This reverts commit d11be738" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +81,17 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59-sources.jar!/org/openqa/selenium/support/ui/FluentWait.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59-sources.jar!/org/openqa/selenium/support/ui/Wait.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://C:/Program Files/Amazon Corretto/jdk11.0.10_9/lib/src.zip!/java.base/java/util/function/Function.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59-sources.jar!/org/openqa/selenium/support/ui/ExpectedConditions.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59-sources.jar!/org/openqa/selenium/WebDriver.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59-sources.jar!/org/openqa/selenium/WebElement.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59-sources.jar!/org/openqa/selenium/SearchContext.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/25.0-jre/guava-25.0-jre-sources.jar!/com/google/common/base/Function.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59-sources.jar!/org/openqa/selenium/support/ui/ExpectedCondition.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectId" id="1rvgkY1r9DpCHzYuM2RHLDbTLQX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -76,6 +106,9 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ui.pages" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\SOFTWARE TESTING\IdeaProjects\Framework\src\test\resources\Features" />
     </key>
@@ -84,7 +117,18 @@
       <recent name="D:\SOFTWARE TESTING\IdeaProjects\Framework\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Cukes1Runner">
+  <component name="RunManager" selected="TestNG.TestCourgetteRunner">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Cukes1Runner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Framework" />
       <option name="PACKAGE_NAME" value="" />
@@ -115,8 +159,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Cukes1Runner" />
         <item itemvalue="TestNG.TestCourgetteRunner" />
+        <item itemvalue="TestNG.Cukes1Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -136,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620414592373</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit after final configuration of the project.">
+      <created>1623088887794</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623088887794</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,7 +231,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -195,7 +246,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Commit after final configuration of the project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit after final configuration of the project." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Framework$Cukes1Runner.ic" NAME="Cukes1Runner Coverage Results" MODIFIED="1620347582457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

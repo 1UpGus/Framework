@@ -1,7 +1,9 @@
 D:\SOFTWARE TESTING\IdeaProjects\Framework\src\test\java\com\ui\stepdefinitions\WomensColthingSteps.java
 D:\SOFTWARE TESTING\IdeaProjects\Framework\src\test\java\com\ui\pages\ForgotPasswordPage.java
 D:\SOFTWARE TESTING\IdeaProjects\Framework\src\test\java\com\ui\pages\SignInPage.java
+D:\SOFTWARE TESTING\IdeaProjects\Framework\src\test\java\com\ui\pages\CreateAccountPage.java
 D:\SOFTWARE TESTING\IdeaProjects\Framework\src\test\java\com\ui\stepdefinitions\GenericSteps.java
+D:\SOFTWARE TESTING\IdeaProjects\Framework\src\test\java\com\ui\stepdefinitions\CreateAccountSteps.java
 D:\SOFTWARE TESTING\IdeaProjects\Framework\src\test\java\com\ui\stepdefinitions\SignInPageSteps.java
 D:\SOFTWARE TESTING\IdeaProjects\Framework\src\test\java\com\ui\pages\GenericPage.java
 D:\SOFTWARE TESTING\IdeaProjects\Framework\src\test\java\com\runner\Cukes1Runner.java

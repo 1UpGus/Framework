@@ -1,169 +1,52 @@
 [ {
-  "line" : 5,
-  "elements" : [ {
-    "start_timestamp" : "2021-05-30T13:02:33.745Z",
-    "before" : [ {
-      "result" : {
-        "duration" : 6892793000,
-        "status" : "passed"
-      },
-      "match" : {
-        "location" : "com.ui.stepdefinitions.Hooks.openBrowser()"
-      }
-    } ],
-    "line" : 19,
-    "name" : "Recovering forgotten password",
-    "description" : "",
-    "id" : "user-authentication;recovering-forgotten-password",
-    "after" : [ {
-      "result" : {
-        "status" : "passed"
-      },
-      "match" : {
-        "location" : "com.ui.stepdefinitions.Hooks.closeBrowser()"
-      }
-    } ],
-    "type" : "scenario",
-    "keyword" : "Scenario",
-    "steps" : [ {
-      "result" : {
-        "duration" : 3975886300,
-        "status" : "passed"
-      },
-      "line" : 20,
-      "name" : "I go to \"Sign in\" page",
-      "match" : {
-        "arguments" : [ {
-          "val" : "Sign in",
-          "offset" : 9
-        } ],
-        "location" : "com.ui.stepdefinitions.GenericSteps.iGoToSomePage(java.lang.String)"
-      },
-      "keyword" : "Given "
-    }, {
-      "result" : {
-        "duration" : 1103315100,
-        "status" : "passed"
-      },
-      "line" : 21,
-      "name" : "I click on \"Forgot your password?\" link",
-      "match" : {
-        "arguments" : [ {
-          "val" : "Forgot your password?",
-          "offset" : 12
-        }, {
-          "val" : "link",
-          "offset" : 35
-        } ],
-        "location" : "com.ui.stepdefinitions.GenericSteps.iClickOnButtonOrLink(java.lang.String,java.lang.String)"
-      },
-      "keyword" : "When "
-    }, {
-      "result" : {
-        "duration" : 205875300,
-        "status" : "passed"
-      },
-      "line" : 22,
-      "name" : "I enter \"gus@gmail.com\"",
-      "match" : {
-        "arguments" : [ {
-          "val" : "gus@gmail.com",
-          "offset" : 9
-        } ],
-        "location" : "com.ui.stepdefinitions.ForgotPasswordSteps.iEnterSomething(java.lang.String)"
-      },
-      "keyword" : "And "
-    }, {
-      "result" : {
-        "duration" : 3997000,
-        "status" : "passed"
-      },
-      "line" : 23,
-      "name" : "I click on \"Retrieve Password\" button",
-      "match" : {
-        "arguments" : [ {
-          "val" : "Retrieve Password",
-          "offset" : 12
-        }, {
-          "val" : "button",
-          "offset" : 31
-        } ],
-        "location" : "com.ui.stepdefinitions.GenericSteps.iClickOnButtonOrLink(java.lang.String,java.lang.String)"
-      },
-      "keyword" : "And "
-    }, {
-      "result" : {
-        "error_message" : "java.lang.Exception: No elements became visible. Tried for 18seconds.\r\n\tat com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:224)\r\n\tat com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:204)\r\n\tat com.ui.pages.SignInPage.iSeeAnyTextOnThePage(SignInPage.java:62)\r\n\tat com.ui.stepdefinitions.GenericSteps.iSeeMessageSomething(GenericSteps.java:38)\r\n\tat ✽.I see message \"There is no account registered for this email address\"(file:///D:/SOFTWARE%20TESTING/IdeaProjects/Framework/src/test/resources/Features/UserAuthenticationExample.feature:24)\r\n",
-        "duration" : 21984989500,
-        "status" : "failed"
-      },
-      "line" : 24,
-      "name" : "I see message \"There is no account registered for this email address\"",
-      "match" : {
-        "arguments" : [ {
-          "val" : "There is no account registered for this email address",
-          "offset" : 15
-        } ],
-        "location" : "com.ui.stepdefinitions.GenericSteps.iSeeMessageSomething(java.lang.String)"
-      },
-      "keyword" : "Then "
-    } ],
-    "tags" : [ {
-      "name" : "@parallel"
-    }, {
-      "name" : "@Test2"
-    } ]
-  } ],
-  "name" : "User Authentication",
-  "description" : "",
-  "id" : "user-authentication",
-  "keyword" : "Feature",
-  "uri" : "file:src/test/resources/Features/UserAuthenticationExample.feature",
-  "tags" : [ {
-    "name" : "@parallel",
-    "type" : "Tag",
-    "location" : {
-      "line" : 4,
-      "column" : 1
-    }
-  } ]
-} , {
   "line" : 2,
   "elements" : [ {
-    "start_timestamp" : "2021-05-30T13:02:23.952Z",
+    "start_timestamp" : "2021-08-20T16:19:46.748Z",
     "before" : [ {
       "result" : {
-        "duration" : 5202077200,
-        "status" : "passed"
+        "error_message" : "java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:847)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)\r\n\tat org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)\r\n\tat org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)\r\n\tat org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)\r\n\tat org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)\r\n\tat com.ui.stepdefinitions.Hooks.openBrowser(Hooks.java:30)\r\n",
+        "duration" : 600627700,
+        "status" : "failed"
       },
       "match" : {
         "location" : "com.ui.stepdefinitions.Hooks.openBrowser()"
       }
     } ],
-    "line" : 4,
-    "name" : "Recovering forgotten password",
+    "line" : 5,
+    "name" : "Adding and removing any item to cart",
     "description" : "",
-    "id" : "this-is-example-feature;recovering-forgotten-password",
+    "id" : "adding-and-removing-item-to-cart;adding-and-removing-any-item-to-cart",
     "after" : [ {
       "result" : {
-        "status" : "passed"
+        "error_message" : "java.lang.NullPointerException\r\n\tat com.ui.stepdefinitions.Hooks.closeBrowser(Hooks.java:36)\r\n",
+        "duration" : 1000400,
+        "status" : "failed"
       },
       "match" : {
         "location" : "com.ui.stepdefinitions.Hooks.closeBrowser()"
+      }
+    }, {
+      "result" : {
+        "error_message" : "java.lang.NullPointerException\r\n\tat com.ui.stepdefinitions.Hooks.embedScreenshot(Hooks.java:46)\r\n",
+        "duration" : 1999200,
+        "status" : "failed"
+      },
+      "match" : {
+        "location" : "com.ui.stepdefinitions.Hooks.embedScreenshot(io.cucumber.java.Scenario)"
       }
     } ],
     "type" : "scenario",
     "keyword" : "Scenario",
     "steps" : [ {
       "result" : {
-        "duration" : 1840609900,
-        "status" : "passed"
+        "duration" : 1997300,
+        "status" : "skipped"
       },
-      "line" : 5,
-      "name" : "I go to \"Sign in\" page",
+      "line" : 7,
+      "name" : "I go to \"Women\" page",
       "match" : {
         "arguments" : [ {
-          "val" : "Sign in",
+          "val" : "Women",
           "offset" : 9
         } ],
         "location" : "com.ui.stepdefinitions.GenericSteps.iGoToSomePage(java.lang.String)"
@@ -171,66 +54,70 @@
       "keyword" : "Given "
     }, {
       "result" : {
-        "duration" : 2031852000,
-        "status" : "passed"
+        "duration" : 999600,
+        "status" : "skipped"
       },
-      "line" : 6,
-      "name" : "I click on \"Forgot your password?\" link",
+      "line" : 8,
+      "name" : "I click on \"Faded Short Sleeve T-shirts\" link",
       "match" : {
         "arguments" : [ {
-          "val" : "Forgot your password?",
+          "val" : "Faded Short Sleeve T-shirts",
           "offset" : 12
-        }, {
-          "val" : "link",
-          "offset" : 35
         } ],
-        "location" : "com.ui.stepdefinitions.GenericSteps.iClickOnButtonOrLink(java.lang.String,java.lang.String)"
+        "location" : "com.ui.stepdefinitions.GenericSteps.iClickOnButtonOrLink(java.lang.String)"
+      },
+      "keyword" : "And "
+    }, {
+      "result" : {
+        "duration" : 999200,
+        "status" : "skipped"
+      },
+      "line" : 9,
+      "name" : "I click on \"Add to cart\" button",
+      "match" : {
+        "arguments" : [ {
+          "val" : "Add to cart",
+          "offset" : 12
+        } ],
+        "location" : "com.ui.stepdefinitions.GenericSteps.iClickOnButtonOrLink(java.lang.String)"
+      },
+      "keyword" : "* "
+    }, {
+      "result" : {
+        "duration" : 999500,
+        "status" : "skipped"
+      },
+      "line" : 10,
+      "name" : "I click on \"Proceed to checkout\" button",
+      "match" : {
+        "arguments" : [ {
+          "val" : "Proceed to checkout",
+          "offset" : 12
+        } ],
+        "location" : "com.ui.stepdefinitions.GenericSteps.iClickOnButtonOrLink(java.lang.String)"
       },
       "keyword" : "When "
     }, {
       "result" : {
-        "duration" : 140920200,
-        "status" : "passed"
+        "duration" : 998700,
+        "status" : "skipped"
       },
-      "line" : 7,
-      "name" : "I enter \"gus@gmail.com\"",
+      "line" : 11,
+      "name" : "I click on the trash bin icon",
       "match" : {
-        "arguments" : [ {
-          "val" : "gus@gmail.com",
-          "offset" : 9
-        } ],
-        "location" : "com.ui.stepdefinitions.ForgotPasswordSteps.iEnterSomething(java.lang.String)"
+        "location" : "com.ui.stepdefinitions.ShoppingCartSteps.iClickOnTheTrashBinIcon()"
       },
       "keyword" : "And "
     }, {
       "result" : {
-        "duration" : 1998300,
-        "status" : "passed"
+        "duration" : 999200,
+        "status" : "skipped"
       },
-      "line" : 8,
-      "name" : "I click on \"Retrieve Password\" button",
+      "line" : 12,
+      "name" : "I see message \"Your shopping cart is empty\"",
       "match" : {
         "arguments" : [ {
-          "val" : "Retrieve Password",
-          "offset" : 12
-        }, {
-          "val" : "button",
-          "offset" : 31
-        } ],
-        "location" : "com.ui.stepdefinitions.GenericSteps.iClickOnButtonOrLink(java.lang.String,java.lang.String)"
-      },
-      "keyword" : "And "
-    }, {
-      "result" : {
-        "error_message" : "java.lang.Exception: No elements became visible. Tried for 18seconds.\r\n\tat com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:224)\r\n\tat com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:204)\r\n\tat com.ui.pages.SignInPage.iSeeAnyTextOnThePage(SignInPage.java:62)\r\n\tat com.ui.stepdefinitions.GenericSteps.iSeeMessageSomething(GenericSteps.java:38)\r\n\tat ✽.I see message \"There is no account registered for this email address\"(file:///D:/SOFTWARE%20TESTING/IdeaProjects/Framework/src/test/resources/Features/Example.feature:9)\r\n",
-        "duration" : 22361833800,
-        "status" : "failed"
-      },
-      "line" : 9,
-      "name" : "I see message \"There is no account registered for this email address\"",
-      "match" : {
-        "arguments" : [ {
-          "val" : "There is no account registered for this email address",
+          "val" : "Your shopping cart is empty",
           "offset" : 15
         } ],
         "location" : "com.ui.stepdefinitions.GenericSteps.iSeeMessageSomething(java.lang.String)"
@@ -240,14 +127,14 @@
     "tags" : [ {
       "name" : "@parallel"
     }, {
-      "name" : "@logo"
+      "name" : "@removeItem"
     } ]
   } ],
-  "name" : "This is example feature",
+  "name" : "Adding and removing item to cart",
   "description" : "",
-  "id" : "this-is-example-feature",
+  "id" : "adding-and-removing-item-to-cart",
   "keyword" : "Feature",
-  "uri" : "file:src/test/resources/Features/Example.feature",
+  "uri" : "file:src/test/resources/Features/RemovingFromCart.feature",
   "tags" : [ {
     "name" : "@parallel",
     "type" : "Tag",

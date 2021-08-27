@@ -10,16 +10,13 @@
     <title>Courgette-JVM Report</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="https://cdn.jsdelivr.net/gh/prashant-ramcharan/courgette-jvm/src/main/resources/report/css/bootstrap.min.css"
-          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/prashant-ramcharan/courgette-jvm/src/main/resources/report/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Plugin CSS -->
-    <link href="https://cdn.jsdelivr.net/gh/prashant-ramcharan/courgette-jvm/src/main/resources/report/css/dataTables.bootstrap4.css"
-          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/prashant-ramcharan/courgette-jvm/src/main/resources/report/css/dataTables.bootstrap4.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="https://cdn.jsdelivr.net/gh/prashant-ramcharan/courgette-jvm/src/main/resources/report/css/core.min.css"
-          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/prashant-ramcharan/courgette-jvm/src/main/resources/report/css/core.min.css" rel="stylesheet">
 
 </head>
 
@@ -47,7 +44,7 @@
                     </div>
                     <div class="card-footer text-white clearfix small z-1" style="cursor: pointer;"
                          onclick="setSearch('');">
-                        <span class="float-left text-white" id="card-total">2</span>
+                        <span class="float-left text-white" id="card-total">1</span>
                     </div>
                 </div>
             </div>
@@ -79,7 +76,7 @@
                     </div>
                     <div class="card-footer text-white clearfix small z-1" style="cursor: pointer;"
                          onclick="setSearch('Failed');">
-                        <span class="float-left text-white" id="card-failed">2</span>
+                        <span class="float-left text-white" id="card-failed">1</span>
                     </div>
                 </div>
             </div>
@@ -94,8 +91,8 @@
                         </div>
                     </div>
                     <div class="card-footer text-white clearfix small z-1" style="cursor: pointer;"
-                         onclick="setSearch('Rerun');">
-                        <span class="float-left" id="card-rerun">2</span>
+                    onclick="setSearch('Rerun');">
+                        <span class="float-left" id="card-rerun">1</span>
                     </div>
                 </div>
             </div>
@@ -112,14 +109,14 @@
                             <div class="col-sm-3">
                                 Timestamp:
                             </div>
-                            <div>2021-05-30T13:03:08.840433200Z</div>
+                            <div>2021-08-20T16:19:48.056215900Z</div>
                         </div>
 
                         <div class="row mt-3">
                             <div class="col-sm-3">
                                 Duration:
                             </div>
-                            <div>1 min, 23 sec</div>
+                            <div>0 min, 5 sec</div>
                         </div>
 
                         <div class="row mt-3">
@@ -147,7 +144,7 @@
                             <div class="col-sm-3">
                                 Cucumber Tags:
                             </div>
-                            <div>@parallel</div>
+                            <div>@removeItem</div>
                         </div>
 
                         <div class="row mt-3">
@@ -185,45 +182,22 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td>
-                                <a href="" data-toggle="collapse" data-target="#8f7709f2-0feb-4bce-a235-7b99d3802980">User
-                                    Authentication</a>
-                                <div class="collapse mt-2" id="8f7709f2-0feb-4bce-a235-7b99d3802980">
-                                    <hr>
-                                    <div class="row">
-                                        <a href="" data-toggle="modal"
-                                           data-target="#ea732b87-ba0a-473b-b54e-e6798f8a5750" id="child-row"
-                                           class="col-lg-9">Recovering forgotten password
-                                        </a>
-                                        <div class="col-lg-2">
-                                            <span class="float-right badge badge-danger">Failed after Rerun</span>
-                                        </div>
-                                    </div>
-                            </td>
-                            <td>
-                                <span class="float-left badge badge-danger">Failed</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="" data-toggle="collapse" data-target="#376d179b-21b9-48a8-888d-1e23585b7251">This
-                                    is example feature</a>
-                                <div class="collapse mt-2" id="376d179b-21b9-48a8-888d-1e23585b7251">
-                                    <hr>
-                                    <div class="row">
-                                        <a href="" data-toggle="modal"
-                                           data-target="#0a9d7e20-87f9-4f8f-a4c9-89d623adac1c" id="child-row"
-                                           class="col-lg-9">Recovering forgotten password
-                                        </a>
-                                        <div class="col-lg-2">
-                                            <span class="float-right badge badge-danger">Failed after Rerun</span>
-                                        </div>
-                                </div>
-                            </td>
-                            <td>
-                                <span class="float-left badge badge-danger">Failed</span>
-                            </td>
-                        </tr>
+                                   <td>
+                                        <a href="" data-toggle="collapse" data-target="#31ef5c33-0134-480f-b6c0-1971117ee722">Adding and removing item to cart</a>
+                                        <div class="collapse mt-2" id="31ef5c33-0134-480f-b6c0-1971117ee722">
+          <hr>
+                                            <div class="row">
+                                                <a href="" data-toggle="modal" data-target="#52303c24-dc0e-4969-b56d-47c67e043b4a" id="child-row" class="col-lg-9">Adding and removing any item to cart
+                                                </a>
+                                                <div class="col-lg-2">
+                                                    <span class="float-right badge badge-danger">Failed after Rerun</span>
+                                                </div>
+                                            </div>
+</td>
+                                    <td>
+                                        <span class="float-left badge badge-danger">Failed</span>
+                                    </td>
+                                </tr>
 
                         </tbody>
                     </table>
@@ -235,231 +209,157 @@
     <!-- /.container-fluid -->
 
     <!-- Modals -->
-    <div class="modal fade" id="ea732b87-ba0a-473b-b54e-e6798f8a5750" tabindex="-1" role="dialog"
-         aria-labelledby="ea732b87-ba0a-473b-b54e-e6798f8a5750" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-white bg-dark">
-<span class="modal-title"><h5>Recovering forgotten password</h5>
-<div class="font-italic text-muted">UserAuthenticationExample.feature - line 19</div></span>
-                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-9" style="overflow-wrap:break-word;">
-                            com.ui.stepdefinitions.Hooks.openBrowser()
-                        </div>
-                        <div class="col-lg-3">
+    <div class="modal fade" id="52303c24-dc0e-4969-b56d-47c67e043b4a" tabindex="-1" role="dialog" aria-labelledby="52303c24-dc0e-4969-b56d-47c67e043b4a" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header text-white bg-dark">
+<span class="modal-title"><h5>Adding and removing any item to cart</h5>
+<div class="font-italic text-muted">RemovingFromCart.feature - line 5</div></span>
+<button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-9" style="overflow-wrap:break-word;">
+com.ui.stepdefinitions.Hooks.openBrowser()
+</div>
+<div class="col-lg-3">
 <span class="float-right">
-<span class="badge badge-info">6892 ms</span>
-<span class="badge badge-success">Passed</span>
-</span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-lg-9" style="overflow-wrap:break-word;">
-                            Given I go to "Sign in" page
-                        </div>
-                        <div class="col-lg-3">
-<span class="float-right">
-<span class="badge badge-info">3975 ms</span>
-<span class="badge badge-success">Passed</span>
-</span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-lg-9" style="overflow-wrap:break-word;">
-                            When I click on "Forgot your password?" link
-                        </div>
-                        <div class="col-lg-3">
-<span class="float-right">
-<span class="badge badge-info">1103 ms</span>
-<span class="badge badge-success">Passed</span>
-</span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-lg-9" style="overflow-wrap:break-word;">
-                            And I enter "gus@gmail.com"
-                        </div>
-                        <div class="col-lg-3">
-<span class="float-right">
-<span class="badge badge-info">205 ms</span>
-<span class="badge badge-success">Passed</span>
-</span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-lg-9" style="overflow-wrap:break-word;">
-                            And I click on "Retrieve Password" button
-                        </div>
-                        <div class="col-lg-3">
-<span class="float-right">
-<span class="badge badge-info">3 ms</span>
-<span class="badge badge-success">Passed</span>
-</span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-lg-9" style="overflow-wrap:break-word;">
-                            Then I see message "There is no account registered for this email address"
-                        </div>
-                        <div class="col-lg-3">
-<span class="float-right">
-<span class="badge badge-info">21984 ms</span>
+<span class="badge badge-info">600 ms</span>
 <span class="badge badge-danger">Failed</span>
 </span>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-lg-12 text-danger" style="overflow-wrap:break-word;">
-                            java.lang.Exception: No elements became visible. Tried for 18seconds.
-                            at com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:224)
-                            at com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:204)
-                            at com.ui.pages.SignInPage.iSeeAnyTextOnThePage(SignInPage.java:62)
-                            at com.ui.stepdefinitions.GenericSteps.iSeeMessageSomething(GenericSteps.java:38)
-                            at ✽.I see message "There is no account registered for this email
-                            address"(file:///D:/SOFTWARE%20TESTING/IdeaProjects/Framework/src/test/resources/Features/UserAuthenticationExample.feature:24)
+</div>
+</div>
+<div class="row mt-2">
+<div class="col-lg-12 text-danger" style="overflow-wrap:break-word;">
+java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+	at com.ui.stepdefinitions.Hooks.openBrowser(Hooks.java:30)
 
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-lg-9" style="overflow-wrap:break-word;">
-                            com.ui.stepdefinitions.Hooks.closeBrowser()
-                        </div>
-                        <div class="col-lg-3">
-<span class="float-right">
-<span class="badge badge-info">0 ms</span>
-<span class="badge badge-success">Passed</span>
-</span>
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="0a9d7e20-87f9-4f8f-a4c9-89d623adac1c" tabindex="-1" role="dialog"
-         aria-labelledby="0a9d7e20-87f9-4f8f-a4c9-89d623adac1c" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-white bg-dark">
-<span class="modal-title"><h5>Recovering forgotten password</h5>
-<div class="font-italic text-muted">Example.feature - line 4</div></span>
-                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-9" style="overflow-wrap:break-word;">
-                            com.ui.stepdefinitions.Hooks.openBrowser()
-                        </div>
-                        <div class="col-lg-3">
-<span class="float-right">
-<span class="badge badge-info">5202 ms</span>
-<span class="badge badge-success">Passed</span>
-</span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-lg-9" style="overflow-wrap:break-word;">
-                            Given I go to "Sign in" page
-                        </div>
-                        <div class="col-lg-3">
-<span class="float-right">
-<span class="badge badge-info">1840 ms</span>
-<span class="badge badge-success">Passed</span>
-</span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-lg-9" style="overflow-wrap:break-word;">
-                            When I click on "Forgot your password?" link
-                        </div>
-                        <div class="col-lg-3">
-<span class="float-right">
-<span class="badge badge-info">2031 ms</span>
-<span class="badge badge-success">Passed</span>
-</span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-lg-9" style="overflow-wrap:break-word;">
-                            And I enter "gus@gmail.com"
-                        </div>
-                        <div class="col-lg-3">
-<span class="float-right">
-<span class="badge badge-info">140 ms</span>
-<span class="badge badge-success">Passed</span>
-</span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-lg-9" style="overflow-wrap:break-word;">
-                            And I click on "Retrieve Password" button
-                        </div>
-                        <div class="col-lg-3">
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-lg-9" style="overflow-wrap:break-word;">
+Given I go to "Women" page
+</div>
+<div class="col-lg-3">
 <span class="float-right">
 <span class="badge badge-info">1 ms</span>
-<span class="badge badge-success">Passed</span>
+<span class="badge badge-warning">Skipped</span>
 </span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-lg-9" style="overflow-wrap:break-word;">
-                            Then I see message "There is no account registered for this email address"
-                        </div>
-                        <div class="col-lg-3">
-<span class="float-right">
-<span class="badge badge-info">22361 ms</span>
-<span class="badge badge-danger">Failed</span>
-</span>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-lg-12 text-danger" style="overflow-wrap:break-word;">
-                            java.lang.Exception: No elements became visible. Tried for 18seconds.
-                            at com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:224)
-                            at com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:204)
-                            at com.ui.pages.SignInPage.iSeeAnyTextOnThePage(SignInPage.java:62)
-                            at com.ui.stepdefinitions.GenericSteps.iSeeMessageSomething(GenericSteps.java:38)
-                            at ✽.I see message "There is no account registered for this email
-                            address"(file:///D:/SOFTWARE%20TESTING/IdeaProjects/Framework/src/test/resources/Features/Example.feature:9)
-
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-lg-9" style="overflow-wrap:break-word;">
-                            com.ui.stepdefinitions.Hooks.closeBrowser()
-                        </div>
-                        <div class="col-lg-3">
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-lg-9" style="overflow-wrap:break-word;">
+And I click on "Faded Short Sleeve T-shirts" link
+</div>
+<div class="col-lg-3">
 <span class="float-right">
 <span class="badge badge-info">0 ms</span>
-<span class="badge badge-success">Passed</span>
+<span class="badge badge-warning">Skipped</span>
 </span>
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-lg-9" style="overflow-wrap:break-word;">
+* I click on "Add to cart" button
+</div>
+<div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">0 ms</span>
+<span class="badge badge-warning">Skipped</span>
+</span>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-lg-9" style="overflow-wrap:break-word;">
+When I click on "Proceed to checkout" button
+</div>
+<div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">0 ms</span>
+<span class="badge badge-warning">Skipped</span>
+</span>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-lg-9" style="overflow-wrap:break-word;">
+And I click on the trash bin icon
+</div>
+<div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">0 ms</span>
+<span class="badge badge-warning">Skipped</span>
+</span>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-lg-9" style="overflow-wrap:break-word;">
+Then I see message "Your shopping cart is empty"
+</div>
+<div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">0 ms</span>
+<span class="badge badge-warning">Skipped</span>
+</span>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-lg-9" style="overflow-wrap:break-word;">
+com.ui.stepdefinitions.Hooks.closeBrowser()
+</div>
+<div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">1 ms</span>
+<span class="badge badge-danger">Failed</span>
+</span>
+</div>
+</div>
+<div class="row mt-2">
+<div class="col-lg-12 text-danger" style="overflow-wrap:break-word;">
+java.lang.NullPointerException
+	at com.ui.stepdefinitions.Hooks.closeBrowser(Hooks.java:36)
+
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-lg-9" style="overflow-wrap:break-word;">
+com.ui.stepdefinitions.Hooks.embedScreenshot(io.cucumber.java.Scenario)
+</div>
+<div class="col-lg-3">
+<span class="float-right">
+<span class="badge badge-info">1 ms</span>
+<span class="badge badge-danger">Failed</span>
+</span>
+</div>
+</div>
+<div class="row mt-2">
+<div class="col-lg-12 text-danger" style="overflow-wrap:break-word;">
+java.lang.NullPointerException
+	at com.ui.stepdefinitions.Hooks.embedScreenshot(Hooks.java:46)
+
+</div>
+</div>
+<hr>
+</div>
+</div>
+</div>
+</div>
 
 
 </div>
@@ -500,7 +400,6 @@
             maintainAspectRatio: false
         }
     });
-
 </script>
 
 <script>
@@ -511,7 +410,6 @@
         }
         $("input[type='search']").val(search).trigger($.Event("keyup", {keyCode: 13}));
     }
-
 </script>
 
 </body>

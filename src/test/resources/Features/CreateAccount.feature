@@ -5,8 +5,9 @@ Feature: Create an account
   Scenario: User creates a new account
 
     Given I go to "Sign in" page
-    And I enter "gu.andrade06@gmail.com"
-    And I click on "SubmitCreate" Button
+    When I set "gus@gmail.com" on the Create Account Email address box
+    * I enter password "sddklfnsldkn"
+    * I click on "SubmitCreate" Button
     When I enter user personal information
       | Field                                        | Information               |
       | Title                                        | Mr                        |
@@ -26,6 +27,6 @@ Feature: Create an account
       | Home phone                                   | +12123456789              |
       | Mobile phone                                 | +12121236789              |
       | Assign an address alias for future reference | My Address                |
-    And I click on "Register" button
+    * I click on "Register" button
     Then  I see message "There is 1 error"
-    And  I see message "There is no account registered for this email address"
+    * I see message "There is no account registered for this email address"

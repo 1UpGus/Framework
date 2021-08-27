@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Features/UserAuthenticationExample.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Features/RemovingFromCart.feature");
 formatter.feature({
-  "name": "User Authentication",
+  "name": "Adding and removing item to cart",
   "description": "",
   "keyword": "Feature",
   "tags": [
@@ -10,7 +10,7 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "name": "Recovering forgotten password",
+  "name": "Adding and removing any item to cart",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -18,147 +18,80 @@ formatter.scenario({
       "name": "@parallel"
     },
     {
-      "name": "@Test2"
+      "name": "@removeItem"
     }
   ]
 });
 formatter.before({
-  "status": "passed"
+  "error_message": "java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId\u003d619687\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:847)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)\r\n\tat org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)\r\n\tat org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)\r\n\tat org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)\r\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:96)\r\n\tat com.ui.stepdefinitions.Hooks.openBrowser(Hooks.java:30)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "I go to \"Sign in\" page",
+  "name": "I go to \"Women\" page",
   "keyword": "Given "
 });
 formatter.match({
   "location": "com.ui.stepdefinitions.GenericSteps.iGoToSomePage(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "I click on \"Forgot your password?\" link",
+  "name": "I click on \"Faded Short Sleeve T-shirts\" link",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.ui.stepdefinitions.GenericSteps.iClickOnButtonOrLink(java.lang.String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "I click on \"Add to cart\" button",
+  "keyword": "* "
+});
+formatter.match({
+  "location": "com.ui.stepdefinitions.GenericSteps.iClickOnButtonOrLink(java.lang.String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "I click on \"Proceed to checkout\" button",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.ui.stepdefinitions.GenericSteps.iClickOnButtonOrLink(java.lang.String,java.lang.String)"
+  "location": "com.ui.stepdefinitions.GenericSteps.iClickOnButtonOrLink(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "I enter \"gus@gmail.com\"",
+  "name": "I click on the trash bin icon",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.ui.stepdefinitions.ForgotPasswordSteps.iEnterSomething(java.lang.String)"
+  "location": "com.ui.stepdefinitions.ShoppingCartSteps.iClickOnTheTrashBinIcon()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "I click on \"Retrieve Password\" button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.ui.stepdefinitions.GenericSteps.iClickOnButtonOrLink(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I see message \"There is no account registered for this email address\"",
+  "name": "I see message \"Your shopping cart is empty\"",
   "keyword": "Then "
 });
 formatter.match({
   "location": "com.ui.stepdefinitions.GenericSteps.iSeeMessageSomething(java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.Exception: No elements became visible. Tried for 18seconds.\r\n\tat com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:224)\r\n\tat com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:204)\r\n\tat com.ui.pages.SignInPage.iSeeAnyTextOnThePage(SignInPage.java:62)\r\n\tat com.ui.stepdefinitions.GenericSteps.iSeeMessageSomething(GenericSteps.java:38)\r\n\tat ✽.I see message \"There is no account registered for this email address\"(file:///D:/SOFTWARE%20TESTING/IdeaProjects/Framework/src/test/resources/Features/UserAuthenticationExample.feature:24)\r\n",
+  "status": "skipped"
+});
+formatter.after({
+  "error_message": "java.lang.NullPointerException\r\n\tat com.ui.stepdefinitions.Hooks.closeBrowser(Hooks.java:36)\r\n",
   "status": "failed"
 });
 formatter.after({
-  "status": "passed"
-});
-});
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Features/Example.feature");
-formatter.feature({
-  "name": "This is example feature",
-  "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@parallel"
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Recovering forgotten password",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@parallel"
-    },
-    {
-      "name": "@logo"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I go to \"Sign in\" page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.ui.stepdefinitions.GenericSteps.iGoToSomePage(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on \"Forgot your password?\" link",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.ui.stepdefinitions.GenericSteps.iClickOnButtonOrLink(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I enter \"gus@gmail.com\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.ui.stepdefinitions.ForgotPasswordSteps.iEnterSomething(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on \"Retrieve Password\" button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.ui.stepdefinitions.GenericSteps.iClickOnButtonOrLink(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I see message \"There is no account registered for this email address\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.ui.stepdefinitions.GenericSteps.iSeeMessageSomething(java.lang.String)"
-});
-formatter.result({
-  "error_message": "java.lang.Exception: No elements became visible. Tried for 18seconds.\r\n\tat com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:224)\r\n\tat com.ui.pages.BasePage.waitForVisibleElement(BasePage.java:204)\r\n\tat com.ui.pages.SignInPage.iSeeAnyTextOnThePage(SignInPage.java:62)\r\n\tat com.ui.stepdefinitions.GenericSteps.iSeeMessageSomething(GenericSteps.java:38)\r\n\tat ✽.I see message \"There is no account registered for this email address\"(file:///D:/SOFTWARE%20TESTING/IdeaProjects/Framework/src/test/resources/Features/Example.feature:9)\r\n",
+  "error_message": "java.lang.NullPointerException\r\n\tat com.ui.stepdefinitions.Hooks.embedScreenshot(Hooks.java:46)\r\n",
   "status": "failed"
-});
-formatter.after({
-  "status": "passed"
 });
 });
